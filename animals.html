@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>MusicBox</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/animals.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>  
+    <div class="container">  
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                <li><a class="nav-link btn" href="index.html">Charlee</a></li>
+                <li class="active"><a class="nav-link btn" href="animals.html">Animals</a></li>
+                <li><a class="nav-link btn" href="about.html">About</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="replay"><a href="#"><span class="glyphicon glyphicon-music"></span> Replay</a></li>
+                <li id="reset"><a href="#"><span class="glyphicon glyphicon-repeat"></span> Reset</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div id="boxes">   
+            <img id="cat" class="box" src="img/cat.svg">
+            <img id="cow" class="box" src="img/cow.svg">
+            <img id="horse" class="box" src="img/horse.svg">
+            <img id="dog" class="box" src="img/dog.svg">
+            <img id="monkey" class="box" src="img/monkey.svg">
+            <img id="pig" class="box" src="img/pig.svg">
+            <img id="sheep" class="box" src="img/sheep.svg">
+        </div>
+    </div>
+    <audio id="catAudio"><source src="media/cat_clip.mp3" type="audio/mpeg"></source></audio>
+    <audio id="cowAudio"><source src="media/cow_clip.mp3" type="audio/mpeg"></source></audio> 
+    <audio id="horseAudio"><source src="media/horse_clip.mp3" type="audio/mpeg"></source></audio>
+    <audio id="dogAudio"><source src="media/dog_clip.mp3" type="audio/mpeg"></source></audio>
+    <audio id="monkeyAudio"><source src="media/monkey_clip.mp3" type="audio/mpeg"></source></audio>
+    <audio id="pigAudio"><source src="media/pig_clip.mp3" type="audio/mpeg"></source></audio>
+    <audio id="sheepAudio"><source src="media/sheep_clip.mp3" type="audio/mpeg"></source></audio>
+</body>
+</html>

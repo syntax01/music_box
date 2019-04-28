@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>MusicBox</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/about.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>  
+    <div class="container">  
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                <li><a class="nav-link btn" href="index.html">Charlee</a></li>
+                <li><a class="nav-link btn" href="animals.html">Animals</a></li>
+                <li class="active"><a class="nav-link btn" href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="header">
+            <div class="jumbotron">
+                <div class="header-text">
+                    <h1>Hello</h1>
+                    <p>Thank you for visiting.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8">
+                    <br>
+                    <h2>This site was created for Charlee Jean.</h2>
+                    <h4><strong>Developer: </strong>Chris Hernandez (Dad)</h4> 
+                    <h4><strong>Date: </strong>April 27, 2019</h4>
+                </div>
+                <div class="col-sm-4">
+                    <span id="heart" class="glyphicon glyphicon-heart logo"></span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <span id="music" class="glyphicon glyphicon-music logo"></span> 
+                </div>
+                <div class="col-sm-8">
+                    <br>
+                    <h2>Charlee loves music and animals!</h2>
+                    <h4><strong>Favorite Song: </strong>Lady Gaga - Shallow</h4> 
+                    <h4><strong>Favorite Animal: </strong>Cat (Ollie)</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function getRandom(x) {
+            return Math.floor(Math.random() * x);
+        }
+        $('#heart,#music').click(function() {
+            let r = getRandom(256);
+            let g = getRandom(256);
+            let b = getRandom(256);
+            let rgb = 'rgb(' + r + ',' + g + ',' + b + ')'
+            $('#heart,#music').css('color', rgb);
+            $('.jumbotron').css('background-color', rgb);
+            $('#heart,#music').addClass('rotate');
+            setTimeout(() => {
+                $('#heart,#music').removeClass('rotate');
+            }, 500);
+        })
+    </script>
+
+</body>
+</html>
